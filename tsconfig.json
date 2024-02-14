@@ -1,3 +1,16 @@
 {
-  "extends": "astro/tsconfigs/base"
+  "compilerOptions": {
+    "target": "esnext", // Elige la versión de JavaScript a la que se va a compilar tu código
+    "module": "esnext", // Elige el sistema de módulos (puede ser 'esnext', 'commonjs', etc.)
+    "jsx": "react", // Habilita el soporte JSX para React
+    "strict": true, // Activa todas las opciones de estricto modo de TypeScript
+    "esModuleInterop": true, // Habilita la interoperabilidad de módulos ES y CommonJS
+    "skipLibCheck": true, // Evita la verificación de las definiciones de tipos de las bibliotecas importadas
+    "forceConsistentCasingInFileNames": true, // Evita conflictos de nombres de archivo debido a mayúsculas y minúsculas en sistemas de archivos que no distinguen entre mayúsculas y minúsculas
+    "resolveJsonModule": true, // Permite la importación de archivos JSON como módulos
+    "isolatedModules": true, // Aísla cada archivo para evitar la dependencia de estado compartido entre archivos
+    "strictNullChecks": true // Habilita el control estricto de nulos y indefinidos
+  },
+  "include": ["src/**/*.tsx", "src/**/*.ts"], // Archivos que deben incluirse en la compilación
+  "exclude": ["node_modules"] // Carpetas y archivos que deben excluirse de la compilación
 }
