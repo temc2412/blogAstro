@@ -2,5 +2,5 @@ import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://temc-blog-astro.netlify.app",
+  site: "https://temc2412-blogastro.netlify.app",
 });
